@@ -1,0 +1,822 @@
+body {
+    background-color: #f1f1f1;
+    ;
+}
+
+.navbar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.432);
+    position: fixed;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 2rem;
+    color: white;
+    padding-left: 1rem;
+}
+
+.navbar-collapse ul {
+    padding-right: 1rem;
+}
+
+.navbar-collapse a {
+    color: white;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.navbar-collapse .act::after {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    /* display: block; */
+    margin-top: .2rem;
+    left: 0;
+    background: white;
+    transition: 2s;
+}
+
+.navbar-collapse a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: .2rem;
+    left: 0;
+    background: white;
+    transition: 2s;
+}
+
+.navbar-collapse a:hover::after {
+    width: 100%;
+    background: white;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+.header {
+    height: 100vh;
+    background-image: url('../img/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.header .overlay {
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.566);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+.header .overlay h1 {
+    font-size: 5rem;
+    padding: 3rem;
+}
+
+.header .overlay h2::after {
+    content: "";
+    font-size: 30px;
+    color: white;
+    animation: typing 10s infinite;
+}
+
+/* 
+Freelancer
+Developer
+Designer
+photographer
+*/
+@keyframes typing {
+    0% {
+        content: "F|";
+    }
+
+    1% {
+        content: "Fr|";
+    }
+
+    3% {
+        content: "Fre|";
+    }
+
+    4% {
+        content: "Free|";
+    }
+
+    5% {
+        content: "Freel|";
+    }
+
+    7% {
+        content: "Freela|";
+    }
+
+    8% {
+        content: "Freelan|";
+    }
+
+    10% {
+        content: "Freelanc|";
+    }
+
+    11% {
+        content: "Freelance|";
+    }
+
+    13% {
+        content: "Freelancer|";
+    }
+
+    14% {
+        content: "Freelance|";
+    }
+
+    16% {
+        content: "Freelanc|";
+    }
+
+    17% {
+        content: "Freelan|";
+    }
+
+    19% {
+        content: "Freela|";
+    }
+
+    20% {
+        content: "Freel";
+    }
+
+    22% {
+        content: "Free|";
+    }
+
+    23% {
+        content: "Fre|";
+    }
+
+    25% {
+        content: "Fr|";
+    }
+
+    26% {
+        content: "F|";
+    }
+
+    28% {
+        content: "|";
+    }
+
+    29% {
+        content: "D|";
+    }
+
+    30% {
+        content: "De|";
+    }
+
+    32% {
+        content: "Dev|";
+    }
+
+    33% {
+        content: "Deve|";
+    }
+
+    34% {
+        content: "Devel|";
+    }
+
+    35% {
+        content: "Develo|";
+    }
+
+    36% {
+        content: "Develop|";
+    }
+
+    38% {
+        content: "Developer|";
+    }
+
+    39% {
+        content: "Develope|";
+    }
+
+    41% {
+        content: "Develop|";
+    }
+
+    42% {
+        content: "Develo|";
+    }
+
+    44% {
+        content: "Devel|";
+    }
+
+    45% {
+        content: "Deve|";
+    }
+
+    47% {
+        content: "Dev|";
+    }
+
+    48% {
+        content: "De|";
+    }
+
+    50% {
+        content: "Des|";
+    }
+
+    51% {
+        content: "Desi|";
+    }
+
+    53% {
+        content: "Desig|";
+    }
+
+    54% {
+        content: "Design|";
+    }
+
+    56% {
+        content: "Designe|";
+    }
+
+    57% {
+        content: "Designer|";
+    }
+
+    59% {
+        content: "P|";
+    }
+
+    61% {
+        content: "Ph|";
+    }
+
+    63% {
+        content: "Pho|";
+    }
+
+    64% {
+        content: "Phot|";
+    }
+
+    66% {
+        content: "Photo|";
+    }
+
+    67% {
+        content: "Photog|";
+    }
+
+    69% {
+        content: "Photogr|";
+    }
+
+    70% {
+        content: "Photogra|";
+    }
+
+    72% {
+        content: "Photograp|";
+    }
+
+    74% {
+        content: "Photograph|";
+    }
+
+    76% {
+        content: "Photographe|";
+    }
+
+    78% {
+        content: "Photographer|";
+    }
+
+    80% {
+        content: "Photographe|";
+    }
+
+    82% {
+        content: "Photograph|";
+    }
+
+    84% {
+        content: "Photograp|";
+    }
+
+    86% {
+        content: "Photogra|";
+    }
+
+    88% {
+        content: "Photogr|";
+    }
+
+    90% {
+        content: "Photog|";
+    }
+
+    92% {
+        content: "Photo|";
+    }
+
+    94% {
+        content: "Phot|";
+    }
+
+    95% {
+        content: "Pho|";
+    }
+
+    96% {
+        content: "Ph|";
+    }
+
+    98% {
+        content: "P|";
+    }
+
+    100% {
+        content: "|";
+    }
+}
+
+.cv {
+    width: 80%;
+    height: auto;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.cv .left {
+    padding-left: 3rem;
+    height: 100%;
+}
+
+.cv .right {
+    padding-right: 3rem;
+    padding-left: 3rem;
+    height: 100%;
+    padding-top: 1rem;
+}
+
+.cv .left img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.cv .left .title {
+    /* border: solid 1px black; */
+    width: 100%;
+    height: 30%;
+}
+
+.cv .left .title div {
+    height: 100%;
+}
+
+.cv .left .title .pic {
+    padding-top: 1.7rem;
+}
+
+.cv .left .title .details span {
+    font-weight: bold;
+}
+
+.cv .right h2 {
+    position: relative;
+}
+
+.cv .right h2::before {
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 4px;
+    margin-top: 2.5rem;
+    background: blue;
+}
+
+.cv .right p {
+    color: #6b6b6b;
+    font-size: 1.2rem;
+}
+
+.grd .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grd .title .hr {
+    height: .3rem;
+    background-color: #0078ff;
+    width: 4rem;
+}
+.grd .title p{
+    color: #6b6b6b;
+}
+.grd .boxes .box{
+    border: solid 1rem #f1f1f1;
+    border-radius: 1.8rem;
+    background-color: #fff;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: .5rem;
+    align-items: center;
+}
+.grd .boxes .box .circle{
+    width: 6.5rem;
+    height: 6.5rem;
+    border: solid .5rem #0078ff;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 2rem;
+    transition: 1s;
+}
+
+.grd .boxes .box:hover .circle{
+    border: solid .5rem #87CEFA;
+    background-color: #0078ff;
+    color: #f1f1f1;
+}
+.chart {
+    height: 70vh;
+    background-image: url('../img/post-3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.chart .overlay {
+    height: 100%;
+    position: absolute;
+    background-color: #0077ff8b;;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+.chart .overlay p{
+    font-size: 1.1rem;
+}
+.chart .overlay .icon{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: solid .5rem white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.flx{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+}
+.sec5 .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sec5 .title .hr {
+    height: .3rem;
+    background-color: #0078ff;
+    width: 4rem;
+}
+
+.sec5 .title p {
+    color: #6b6b6b;
+}
+.sec5 .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 2rem;
+}
+.sec5 .cards .card .pic{
+    overflow: hidden;
+}
+.sec5 .cards .card .pic img {
+    transition: 1s;
+}
+.sec5 .cards .card:hover img{
+    scale: 1.3;
+}
+.sec5 .cards .card .crd{
+    display: flex;
+    justify-content: space-between;
+}
+.sec5 .cards .card .crd .left{
+    display: flex;
+    flex-direction: column;
+    /* border: solid 1px red; */
+}
+.sec5 .cards .card .crd .left p{
+    font-size: .8rem;
+}
+.sec5 .cards .card .crd span{
+    color: #0078ff;
+}
+.sec5 .cards .card .crd .right {
+    font-size: 2.5rem;
+    color: #0078ff;
+    display: flex;
+    align-items: center;
+}
+.sec6 {
+    height: 65vh;
+    background-image: url('../img/overlay-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.sec6 .overlay {
+    height: 100%;
+    position: absolute;
+    background-color: #0077ff79;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    overflow: hidden;
+}
+.sec6 .overlay img{
+    border-radius: 50%;
+}
+.sec6 .overlay p {
+    width: 55%;
+}
+.sec7 .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sec7 .title .hr {
+    height: .3rem;
+    background-color: #0078ff;
+    width: 4rem;
+}
+.sec7 .title p {
+    color: #6b6b6b;
+}
+.sec7 .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 2rem;
+}
+.sec7 .cards hr{
+    width: 100%;
+}
+.sec7 .cards .left,.right{
+    /* border: solid 1px red; */
+    height: 3rem;
+}
+.sec7 .cards .left img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+.sec7 .cards .left p {
+    padding-top: 1rem;
+    padding-left: .3rem;
+}
+.sec7 .cards .left{
+    display: flex;
+    align-items: center;
+}
+.sec7 .cards .right {
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+}
+.sec7 .cards .right p{
+    color: #6b6b6b;
+}
+.sec7 .cards .card{
+    position: relative;
+}
+.sec7 .cards .card .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: #0078ff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec7 .cards .card .overlay div{
+    border-radius: .5rem;
+    color: white;
+    width: 8rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+.sec8 {
+    background-image: url('../img/overlay-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-color: #f1f1f1;
+}
+
+.sec8 .overlay {
+    background-color: #0077ff92;
+}
+
+.sec8_row{
+    background-color: #fff;
+}
+
+.container8 {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06);
+}
+
+.title-box-2 h3 {
+    color: #1e1e1e;
+}
+
+.title-box-2 p {
+    padding-top: 50px;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.title-box h3 {
+    color: black;
+}
+
+.title2_line {
+    height: 3px;
+    background-color: #0078ff;
+    width: 100px;
+    float: left;
+}
+
+.sec8 .title {
+    padding-left: 40px;
+    padding-bottom: 50px;
+}
+
+.title2 {
+    padding-right: 40px;
+    padding-bottom: 50px;
+}
+
+.title2_icons i {
+    color: #0078ff;
+}
+
+.title2_icons span {
+    color: #4e4e4e;
+    padding-left: 5px;
+}
+
+.title2_icons {
+    line-height: 35px;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+}
+
+.button-b {
+    text-align: center;
+}
+.sec8 .hr{
+    width: 50%;
+    height: .2rem;
+    background-color: blue;
+}
+.sec8 .hr2 {
+    width: 35%;
+    height: .2rem;
+    background-color: blue;
+}
+/* .title-box h3::after{
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 4px;
+    margin-top: 2.5rem;
+    background: blue;
+    left: 0;
+} */
+.button-a {
+    background-color: #0078ff;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: all 0.4s;
+    border-radius: 5rem;
+}
+
+.button-a:hover {
+    background: #3393ff;
+    box-shadow: 0 0 0 4px #cde1f8;
+}
+
+.socials {
+    padding-top: 20px;
+}
+
+.brands {
+    height: 60px;
+    width: 60px;
+    line-height: 1.5;
+    box-shadow: 0 0 0 5px #3393ff;
+    padding: 5px;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+}
+
+.brands {
+    margin-left: 15px;
+}
+
+
+.brands:hover {
+    background-color: #0078ff;
+    box-shadow: 0 0 0 4px #cde1f8;
+    color: #fff;
+}
+
+.footer {
+    text-align: center;
+    color: #fff;
+    padding: 25px 0;
+    background: #0062d3;
+}
+
+.end {
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
